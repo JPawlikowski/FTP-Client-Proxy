@@ -1,0 +1,41 @@
+Socket Client Active!
+Available commands:
+CONN : connect to ftp.cdc.gov via FTP via port 21 - DO THIS FIRST
+USER <username> : user authentication (note 'anonymous' is accepted user)
+PASS <email> : password authentication via an email address
+pwd : display current active directory
+cwd : change current active directory
+help : display instructional docs
+cdup : change active directory to parent
+syst : display system information
+quit : disconnect from server
+
+Enter FTP command: CONN
+Connecting to ftp.cdc.gov..
+ ->  220 Microsoft FTP Service
+
+Enter FTP command: USER anonymous
+ -->  331 Anonymous access allowed, send identity (e-mail name) as password.
+
+Enter FTP command: PASS pawlikoj@mcmaster.ca
+ -->  230 User logged in.
+
+Enter FTP command: CWD pub
+ -->  250 CWD command successful.
+
+Enter FTP command: pwd
+ -->  257 "/pub" is current directory.
+
+Enter FTP command: cdup
+ -->  250 cdup command successful.
+
+Enter FTP command: pwd
+ -->  257 "/" is current directory.
+
+Enter FTP command: syst
+ -->  215 Windows_NT
+
+Enter FTP command: quit
+ -->  221 Goodbye.
+
+Quiting client
